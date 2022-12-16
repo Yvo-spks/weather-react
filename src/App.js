@@ -1,7 +1,7 @@
 import Weather from './Weather';
 import './App.css';
 
-function App() {
+function App(props) {
   let weatherData ={
     city: "Paris",
     date: "Friday 4:41 ",

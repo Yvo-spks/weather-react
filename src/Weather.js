@@ -1,5 +1,6 @@
 import React from  "react";
 import axios from "axios";
+import Search from "./Search";
 import {Audio} from "react-loader-spinner";
 
 export default function Weather (props) {
@@ -22,6 +23,7 @@ function handleSubmit(response){
   wrapperStyle
   wrapperClass
 />
+<Search/>
         </div>
     );
 }
