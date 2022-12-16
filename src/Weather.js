@@ -17,7 +17,7 @@ function handleSubmit(response){
   height="80"
   width="80"
   radius="9"
-  color="yellow"
+  color="white"
   ariaLabel="loading"
   wrapperStyle
   wrapperClass
