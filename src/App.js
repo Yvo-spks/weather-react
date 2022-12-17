@@ -1,22 +1,26 @@
-import Weather from './Weather';
+import Weather from "./Weather"
+import Search from "./Search";
+import Forecast from "./Forecast";
 import './App.css';
 
 function App(props) {
+  
   let weatherData ={
     city: "Paris",
     date: "Friday 4:41 ",
     description: "Clear Sky"
   };
+  
   return (
     <div className="App">
       <div className="weather-demo-wrapper">
       <div className="weather-demo">  
-      <header className="App-header">
+      <Search/>
         <h1>
           <ul>
-            <li>{weatherData.city}</li>
-            <li>{weatherData.date}</li>
-            <li>{weatherData.description}</li>
+            <li className="data">{weatherData.city}</li>
+            <li className="data">{weatherData.date}</li>
+            <li className="data">{weatherData.description}</li>
           </ul>
         </h1>
         <h2>
@@ -50,12 +54,13 @@ function App(props) {
                 </li>
               </ul>
             </h3>
-      </header>
+      
       <Weather/>
+      <Forecast/>
       </div>
       </div>
     </div>
   );
 }
-
+ 
 export default App;

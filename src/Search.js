@@ -1,4 +1,5 @@
 import React from "react";
+import "./Search.css";
 
 export default function Search () {
     return(
@@ -10,7 +11,7 @@ export default function Search () {
         <input
           type="Search"
           className="pin"
-          placeholder="Enter a City..."
+          placeholder="Enter a City..." 
           autofocus="off"
         />
         <button type="submit" className="button-search">

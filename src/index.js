@@ -9,7 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App humidity={72} wind={16} temperature={8} />
-    
+   <footer>
+   <a href="https://github.com/Yvo-spks/weather-react" target="_blank" rel="noreferrer">Open-source code</a>, by Yvonne Imongan
+   </footer>
   </React.StrictMode>
 );
 
